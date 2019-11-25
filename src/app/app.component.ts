@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { maxLength, registrationValidationMessages } from './validation-messages';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'enum-usage';
+  maxLength = maxLength;
+  registrationValidationMessages = registrationValidationMessages;
 }
